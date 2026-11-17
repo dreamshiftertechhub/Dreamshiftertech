@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/dreamshifter",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "About Dreamshifter Tech Hub",
+      "hasCanvas": false,
+      "bodyTextLen": 2689,
+      "bodyTextHash": "39a23e43212d46d43e4f94a23f4cdaf15294d5b9d54e6810bed839b269b5c26c",
+      "bodyTextPrefix": "Skip to content About Services Work Shiftnear Academy Webinar St",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/about-top.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "About Dreamshifter Tech Hub",
+      "hasCanvas": false,
+      "bodyTextLen": 2637,
+      "bodyTextHash": "9910d9a66fa122788026672c3277ec3864825e2ce9234163a76416b115f0fc58",
+      "bodyTextPrefix": "Skip to content Open menu ABOUT DREAMSHIFTER Technology should c",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/about-top-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/about-top.json"
+}

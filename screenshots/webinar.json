@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/webinar",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Upcoming webinar — ShiftNear Live, 1 December 2026",
+      "hasCanvas": false,
+      "bodyTextLen": 3447,
+      "bodyTextHash": "45c97f52fc7213f670c9bf5bdffde5dd3a12bac011f474a1896d925b42794cea",
+      "bodyTextPrefix": "Skip to content About Services Work Shiftnear Academy Webinar St",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/webinar.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Upcoming webinar — ShiftNear Live, 1 December 2026",
+      "hasCanvas": false,
+      "bodyTextLen": 3395,
+      "bodyTextHash": "c0018b26a4723f4fc504b9c5528ba14ef2c0d5f24cc86cbf5913dc7d2d2872ab",
+      "bodyTextPrefix": "Skip to content Open menu UPCOMING WEBINAR · SHIFTNEAR LIVE Grow",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/webinar-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/webinar.json"
+}

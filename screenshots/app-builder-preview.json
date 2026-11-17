@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Dreamshifter Tech Hub — Digital products. Built with purpose.",
+      "hasCanvas": false,
+      "bodyTextLen": 3034,
+      "bodyTextHash": "614626ede96012b53b7dc515d641252fcd13ab0f5e52d3649154a74f981045a3",
+      "bodyTextPrefix": "Skip to content About Services Work Shiftnear Academy Webinar St",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Dreamshifter Tech Hub — Digital products. Built with purpose.",
+      "hasCanvas": false,
+      "bodyTextLen": 2982,
+      "bodyTextHash": "94031c75d1eeaa9a2001e7328a6de25fad7b2b91aa309cacfd7e5cabb0eb45da",
+      "bodyTextPrefix": "Skip to content Open menu INDEPENDENT DIGITAL AGENCY · NIGERIA W",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
