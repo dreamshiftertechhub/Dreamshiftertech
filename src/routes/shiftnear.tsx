@@ -1,0 +1,130 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { VendorForm } from "@/components/forms";
+import { SiteShell, Wrap } from "@/components/site-shell";
+
+export const Route = createFileRoute("/shiftnear")({
+  head: () => ({
+    meta: [
+      { title: "Shiftnear — Find local services. Connect with skilled people." },
+      {
+        name: "description",
+        content: "Shiftnear is an upcoming service marketplace connecting customers with local experts and vendors. Join the pre-launch vendor list.",
+      },
+    ],
+  }),
+  component: ShiftnearPage,
+});
+
+function ShiftnearPage() {
+  return (
+    <SiteShell>
+      <section className="border-b border-line bg-brand text-paper">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:px-8 md:py-24 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p className="kicker text-accent">A Dreamshifter product · In development</p>
+            <h1 className="display mt-5 max-w-2xl text-paper">Your next customer could be closer than you think.</h1>
+            <p className="mt-6 max-w-xl text-base leading-8 text-paper/80">
+              Shiftnear is an upcoming service marketplace designed to connect customers with local experts and vendors. Find the people who can help. Give good local businesses a better way to be found.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="#vendor" className="inline-flex min-h-12 items-center bg-accent px-5 text-sm font-semibold text-brand-deep hover:bg-accent-deep">
+                Become an early vendor
+              </a>
+              <a href="#how-it-works" className="inline-flex min-h-12 items-center border border-paper/30 px-5 text-sm font-semibold text-paper">
+                How it works
+              </a>
+            </div>
+            <p className="mt-6 text-xs text-paper/70">Pre-launch · Features and availability may evolve before release.</p>
+          </div>
+          <div className="grid gap-px bg-paper/20 sm:grid-cols-2">
+            <div className="flex min-h-48 flex-col justify-end bg-brand-deep p-6">
+              <p className="kicker text-accent">Customers</p>
+              <p className="mt-3 font-display text-3xl">Find nearby</p>
+              <p className="mt-2 text-sm leading-6 text-paper/75">Discover services and businesses in the areas you care about.</p>
+            </div>
+            <div className="flex min-h-48 flex-col justify-end bg-brand-deep p-6 sm:mt-8">
+              <p className="kicker text-accent">Vendors</p>
+              <p className="mt-3 font-display text-3xl">Get discovered</p>
+              <p className="mt-2 text-sm leading-6 text-paper/75">Give your skills and business a place to be seen by potential customers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Wrap>
+        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="eyebrow">The problem</p>
+            <h2 className="title mt-4">Finding a reliable service provider shouldn't feel like guesswork.</h2>
+          </div>
+          <div className="space-y-4 text-sm leading-7 text-muted md:text-base">
+            <p>
+              People need services every day, from repairs and cleaning to beauty, food, fashion and creative work. Finding the right person can take too much time.
+            </p>
+            <p>
+              At the same time, skilled local providers often struggle to reach customers beyond their immediate networks. Shiftnear is being developed to make that first connection easier.
+            </p>
+          </div>
+        </div>
+      </Wrap>
+      <section id="how-it-works" className="border-y border-line bg-card">
+        <Wrap>
+          <p className="eyebrow">One marketplace. More ways to connect.</p>
+          <h2 className="title mt-4 max-w-2xl">Built for the people looking for help and the people ready to provide it.</h2>
+          <div className="mt-10 grid gap-10 md:grid-cols-2">
+            <article>
+              <h3 className="font-display text-3xl">For customers</h3>
+              <ul className="mt-4 space-y-3 text-sm leading-7 text-muted">
+                <li>Discover service providers in your area.</li>
+                <li>Explore different service categories.</li>
+                <li>Find offerings that match what you need.</li>
+                <li>Connect with local businesses more easily.</li>
+              </ul>
+              <Link to="/customers" className="mt-5 inline-flex text-sm font-semibold text-brand">How discovery will work</Link>
+            </article>
+            <article className="md:border-l md:border-line md:pl-10">
+              <h3 className="font-display text-3xl">For vendors</h3>
+              <ul className="mt-4 space-y-3 text-sm leading-7 text-muted">
+                <li>Create a business presence on the platform.</li>
+                <li>Showcase your services and offerings.</li>
+                <li>Reach potential customers in your community.</li>
+                <li>Build visibility beyond word of mouth.</li>
+              </ul>
+              <Link to="/vendors" className="mt-5 inline-flex text-sm font-semibold text-brand">Founding vendor notes</Link>
+            </article>
+          </div>
+        </Wrap>
+      </section>
+      <Wrap>
+        <div className="grid items-start gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="eyebrow">Early vendor onboarding</p>
+            <h2 className="title mt-4">Get your business ready for Shiftnear.</h2>
+            <p className="mt-4 text-sm leading-7 text-muted">
+              If you offer a service, run a small business or have a skill people need, we'd like to hear from you. Registering interest does not publish a listing or guarantee customers. We'll share onboarding details as the product moves towards launch.
+            </p>
+            <Link to="/webinar" className="mt-6 inline-flex text-sm font-semibold text-brand">
+              Join the 1 December webinar
+            </Link>
+          </div>
+          <div id="vendor" className="border border-line bg-card p-6 md:p-8">
+            <h3 className="font-display text-3xl">Register your vendor interest</h3>
+            <p className="mt-2 mb-6 text-sm leading-6 text-muted">Tell us what you offer and where you serve.</p>
+            <VendorForm />
+          </div>
+        </div>
+      </Wrap>
+      <section className="bg-brand text-paper">
+        <Wrap>
+          <p className="kicker text-accent">Shiftnear is coming</p>
+          <h2 className="title mt-4 max-w-2xl text-paper">Good services deserve to be discovered.</h2>
+          <p className="mt-4 max-w-xl text-sm leading-7 text-paper/80">
+            We're building a better starting point for local discovery. Join the early vendor list and follow the journey.
+          </p>
+          <Link to="/contact" className="mt-7 inline-flex min-h-12 items-center bg-accent px-5 text-sm font-semibold text-brand-deep">
+            Talk to the team
+          </Link>
+        </Wrap>
+      </section>
+    </SiteShell>
+  );
+}
